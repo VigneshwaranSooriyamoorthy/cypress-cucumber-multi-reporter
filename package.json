@@ -1,0 +1,31 @@
+{
+  "name": "cypress-reference-project",
+  "version": "1.0.0",
+  "description": "BDD Cypress project with HTML and JUnit reports",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VigneshwaranSooriyamoorthy/cypress-cucumber-multi-reporter.git"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "cypress-mochawesome",
+    "mocha-junit-reporter"
+  ],
+  "author": "Vigneshwaran Sooriyamoorthy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VigneshwaranSooriyamoorthy/cypress-cucumber-multi-reporter/issues"
+  },
+  "homepage": "https://github.com/VigneshwaranSooriyamoorthy/cypress-cucumber-multi-reporter#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "15.1.4",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^12.7.0",
+    "esbuild": "^0.17.11"
+  }
+}
