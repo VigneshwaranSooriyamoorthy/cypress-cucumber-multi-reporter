@@ -29,12 +29,13 @@ async function setupNodeEvents(on, config) {
     // Merge all the junit xmls
     const outputFile = path.join(reportDir, 'combined-junit-report.xml');
     const inputFiles = [path.posix.join('cypress', 'reports', 'results-*.xml')]
-    mergeFiles(outputFile, inputFiles);
-
-    // Remove all the junit xmls
-    fs.readdirSync(reportDir)
+    mergeFiles(outputFile, inputFiles)
+      .then(() => {
+        // Remove all the junit xmls
+        fs.readdirSync(reportDir)
         .filter(f => junitReportsRegex.test(f))
-        .map(f => fs.unlinkSync(path.join(reportDir, f)))
+        .map(f => fs.unlinkSync(path.join(reportDir, f)));
+      });
   });
 
   return config;
