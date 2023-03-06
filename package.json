@@ -1,5 +1,5 @@
 {
-  "name": "cypress-reference-project",
+  "name": "cypress-cucumber-multi-reporter",
   "version": "1.0.0",
   "description": "BDD Cypress project with HTML and JUnit reports",
   "main": "index.js",
