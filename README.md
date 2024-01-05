@@ -24,16 +24,16 @@ BDD Cypress project with HTML and JUnit reports
    3. cypress-open: To open cypress UI
 
 ## [cypress.config.js](/cypress.config.js) - Explanation
-1. Cucumber
-```js
-   await preprocessor.addCucumberPreprocessorPlugin(on, config);
-   on(
-      "file:preprocessor",
-      createBundler({
-         plugins: [createEsbuildPlugin.default(config)],
-      })
-   );
-```
+1. Cucumber Preprocessor
+   ```js
+      await preprocessor.addCucumberPreprocessorPlugin(on, config);
+      on(
+         "file:preprocessor",
+         createBundler({
+            plugins: [createEsbuildPlugin.default(config)],
+         })
+      );
+   ```
 2. Reporter
    1. `cypress-multi-reporters`: Helps in generating multiple reports
    ```js
