@@ -3,7 +3,7 @@ BDD Cypress project with HTML and JUnit reports
 
 ## Start with
 1. Clone the project
-2. Install below extenstions
+2. Install below VS Code extensions
    
    Must
    
