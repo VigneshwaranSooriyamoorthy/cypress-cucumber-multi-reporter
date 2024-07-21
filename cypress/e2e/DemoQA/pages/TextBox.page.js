@@ -17,3 +17,7 @@ export const getElementPermanentAddress = () => {
 export const getElementSubmit = () => {
     return cy.get('#submit');
 }
+
+export const getElementOutput = () => {
+    return cy.get('#output');
+}

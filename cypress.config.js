@@ -43,12 +43,13 @@ async function setupNodeEvents(on, config) {
 
 module.exports = defineConfig({
   e2e: {
+    watchForFileChanges: false,
     specPattern: "**/*.feature",
     experimentalRunAllSpecs: true,
     setupNodeEvents,
   },
   env: {
-    tags: ['@Regression']
+    tags: ['not @Smoke']
   },
   reporter: "cypress-multi-reporters",
   reporterOptions: {
