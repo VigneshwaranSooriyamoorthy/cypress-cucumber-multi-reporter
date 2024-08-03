@@ -1,5 +1,5 @@
 # cypress-cucumber-multi-reporter
-BDD Cypress project with HTML and JUnit reports
+Cypress BDD project with mochawesome HTML and JUnit reports
 
 ## Start with
 - Clone the project
@@ -11,10 +11,13 @@ BDD Cypress project with HTML and JUnit reports
    - Prettier - Code formatter
 - [Extension settings](/.vscode/settings.json) - Configure the locations of step definition files, so we can make use of **Cucumber (Gherkin) Full Support** and navigate to step definition
 - Make use of scripts added in [package.json](/package.json) to complete local setup and start working with Cypress
+<br>
    [command line - npm run \<script>]
    - setup: To install all dependencies
-   - cypress-run: To execute cypress test cases
+   - cypress-run: To execute all test scenarios
    - cypress-open: To open cypress UI
+   - run-smoke-tests: To execute all test scenarios tagged 'Smoke'
+   - run-regression-tests: To execute all test scenarios tagged 'Regression'
 
 ## [cypress.config.js](/cypress.config.js) - Explanation
 - Cucumber Preprocessor

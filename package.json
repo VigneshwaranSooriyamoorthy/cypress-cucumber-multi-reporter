@@ -7,7 +7,6 @@
     "setup": "npm i",
     "cypress-run": "cypress run",
     "cypress-open": "cypress open",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "run-smoke-tests": "cypress run env --tags=\"Smoke\"",
     "run-regression-tests": "cypress run env --tags=\"Regression\""
   },
