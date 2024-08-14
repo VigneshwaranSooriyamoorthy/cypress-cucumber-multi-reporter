@@ -4,4 +4,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    entrypoint: /bin/bash -c "cypress/support/docker.sh"
+    # shell run not working on 'Play with Docker' but fine with 'Docker Desktop'
+    # entrypoint: /bin/bash -c "cypress/support/docker.sh"
+    entrypoint: cypress run
