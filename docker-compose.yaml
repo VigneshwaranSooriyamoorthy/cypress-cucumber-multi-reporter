@@ -1,0 +1,7 @@
+services:
+  test-automation:
+    container_name: cypress-automation
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: /bin/bash -c "cypress/support/docker.sh"
